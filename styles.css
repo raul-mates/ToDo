@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #E6BD5B, #E2926F);
+}
+
+.container__header {
+  text-align: center;
+}
+.container__header--heading {
+  color: #fff;
+  font-weight: 500;
+}
+
+.section__todo {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.section__todo__inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.section__todo__inputs-container__input-wrapper {
+  position: relative;
+}
+.section__todo__inputs-container__input-wrapper--input {
+  outline: none;
+  padding: 5px 7.5px;
+  font-family: inherit;
+  width: 250px;
+}
+.section__todo__inputs-container__input-wrapper--add {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  display: flex;
+  background-color: #DC8D73;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 !important;
+  cursor: pointer;
+}
+.section__todo__inputs-container__sort {
+  padding: 5px 7.5px;
+  margin-left: 10px;
+  color: #E5AC93;
+}
+.section__todo__inputs-container__sort:focus {
+  outline: none;
+}
+.section__todo__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.section__todo__list--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section__todo__list--item:not(:last-of-type) {
+  margin-bottom: -20px;
+}
+.section__todo__list--item--value {
+  background-color: #fff;
+  padding: 5px 7.5px;
+  width: 25%;
+}
+.section__todo__list--item--complete {
+  cursor: pointer;
+  background-color: #40B647;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 5px 7.5px;
+}
+.section__todo__list--item--complete * {
+  pointer-events: none;
+}
+.section__todo__list--item--complete:hover {
+  background-color: #339038;
+}
+.section__todo__list--item--delete {
+  cursor: pointer;
+  background-color: #FF7A40;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 5px 7.5px;
+}
+.section__todo__list--item--delete * {
+  pointer-events: none;
+}
+.section__todo__list--item--delete:hover {
+  background-color: #ff560d;
+}
+
+.button {
+  display: flex;
+  padding: 7px 7.5px;
+}
+
+.finished {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=styles.css.map */
