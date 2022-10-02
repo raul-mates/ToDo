@@ -63,7 +63,6 @@ const sortOnChange = () => {
     const list = document.querySelector('.section__todo__list');
 
     sort.addEventListener('change', (e) => {
-        console.log('schimba-mi-as pula-n ma-ta', e.target.value)
         let myArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : []
         const sortValue = e.target.value;
 
