@@ -65,7 +65,6 @@ const sortOnChange = () => {
         const sortValue = e.target.value;
 
         if (sortValue !== 'All') {
-            console.log(sortValue)
             const finishedState = sortValue === 'Finished';
             myArr = myArr.filter((todo) => todo.isFinished === finishedState);
         }
